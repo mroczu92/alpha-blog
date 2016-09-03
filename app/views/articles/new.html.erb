@@ -1,6 +1,15 @@
 <h1> CO JEST KURWA</h1>
 <%= form_for(@article) do |f| %>
-  
+  <% if @article.errors.any? %>
+  <% @article.errors.full_messages.each do |msg| %>
+  <h2>ERRORS</h2>
+  <ul>
+    <li>
+      <%= msg %>
+    </li>
+  </ul>
+  <% end %>
+  <% end %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
