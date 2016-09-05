@@ -1,20 +1,17 @@
 body {
   margin: 0px 0px 0px 0px;
   background-color: #1a1a1a;
-  font-family: Impact;
+  font-family: 'Raleway', sans-serif;
   color: white;
 }
 .container {
   width: 1000px;
   margin: auto;
 }
-.header{
-  
-
-  
+.menu{
+  margin-left: 15px;
 }
 .content{
-  margin-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -27,5 +24,5 @@ a:link, a:visited, a:active {
   font-size: 35px;
 }
 a:hover{
-  color: #8B0000;
+  color: #ed4545;
 }
