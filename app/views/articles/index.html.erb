@@ -1,19 +1,51 @@
-<h1>Listed all articles</h1>
-<%=link_to 'Create new article', new_article_path %>
-<table>
+<div class="container">
+<div class="header">
+  <center>
+ <table>
+   <td>
+     <%=image_tag 'rails.png' %>
+     <td>
+       <p class="title" style="font-size: 74px; margin-left: 65px;">
+         Ruby on Rails<br>
+         projects
+       </p>
+     </td>
+   </td>
+ </table>
+ </center>
+ 
+<div class="content">
+  <hr>
+  <div class="menu">
+    <%=link_to 'Home', root_path %>
+    <%=link_to 'About', about_path %>
+    <%=link_to 'Artykuly', articles_path %>
+  </div>
+  <hr>
+  <h1>Listed all articles</h1>
+  <p><%=link_to 'Create new article', new_article_path %></p>
+  
+
   
 
   <% @articles.each do |article| %>
-  <tr>
-    <td><%=article.title %></td>
-    <td><%=link_to 'Edit', edit_article_path(article) %></td>
-    <td><%=link_to 'Show', article_path(article) %></td>
-    <td><%=link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
+  <table class="articles">
+    <tr>
+      <td style="width: 300px"><%=article.title %></td>
+      <td class="crud"><%=link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
+      <td class="crud"><%=link_to 'Edit', edit_article_path(article) %></td>
+      <td class="crud"><%=link_to 'Show', article_path(article) %></td>
+      
     
-  </tr>
-  <tr>
-    <td><%=article.description %></td>
-  </tr>
-  
+    </tr>
+    <tr>
+      <td><%=article.description %></td>
+    </tr>
+  </table>
   <% end %>
-</table>  
+</div>
+</div>
+</div>
+
+
+  

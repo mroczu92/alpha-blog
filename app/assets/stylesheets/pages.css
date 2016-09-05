@@ -9,20 +9,29 @@ body {
   margin: auto;
 }
 .menu{
-  margin-left: 15px;
+
 }
 .content{
   padding-left: 20px;
   padding-right: 20px;
 }
-a {
+.menu a {
   text-decoration: none;
   padding-right: 15px;
 }
-a:link, a:visited, a:active {
+.menu a:link, a:visited, a:active {
   color: white;
   font-size: 35px;
 }
-a:hover{
+.menu a:hover{
   color: #ed4545;
+}
+
+.articles {
+  width: 100%;
+  border: 1px solid white;
+  
+}
+.crud {
+  float: right;
 }
