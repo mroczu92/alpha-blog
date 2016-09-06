@@ -31,15 +31,19 @@
   <% @articles.reverse.each do |article| %>
   <table class="articles">
     <tr>
-      <td style="width: 300px"><%=article.title %></td>
-      <td class="crud"><%=link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
-      <td class="crud"><%=link_to 'Edit', edit_article_path(article) %></td>
-      <td class="crud"><%=link_to 'Show', article_path(article) %></td>
+      <td style="width: 300px"><h2><%=article.title %></h2></td>
+      <td class="crud">
+        <h4>
+        <%=link_to 'Show', article_path(article) %>
+        <%=link_to 'Edit', edit_article_path(article) %>
+        <%=link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %>
+        </h4>
+      </td>
       
     
     </tr>
     <tr>
-      <td><%=article.description %></td>
+      <td><p><%=article.description %></p></td>
     </tr>
   </table>
   <% end %>

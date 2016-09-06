@@ -8,8 +8,12 @@ body {
   width: 1000px;
   margin: auto;
 }
-.menu{
-
+a, a:link, a:visited, a:active{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #ed4545;
 }
 .content{
   padding-left: 20px;
@@ -19,7 +23,7 @@ body {
   text-decoration: none;
   padding-right: 15px;
 }
-.menu a:link, a:visited, a:active {
+.menu a:link, .menu a:visited, .menu a:active {
   color: white;
   font-size: 35px;
 }
