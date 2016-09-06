@@ -28,7 +28,7 @@
 
   
 
-  <% @articles.each do |article| %>
+  <% @articles.reverse.each do |article| %>
   <table class="articles">
     <tr>
       <td style="width: 300px"><%=article.title %></td>
