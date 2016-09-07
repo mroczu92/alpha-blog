@@ -1,12 +1,10 @@
 <%= form_for(@article) do |f| %>
   <% if @article.errors.any? %>
+  <h2>Errors :</h2>
   <% @article.errors.full_messages.each do |msg| %>
-  <h2>ERRORS</h2>
-  <ul>
-    <li>
+    <div class="alert alert-warning">
       <%= msg %>
-    </li>
-  </ul>
+    </div>
   <% end %>
   <% end %>
   <p>
