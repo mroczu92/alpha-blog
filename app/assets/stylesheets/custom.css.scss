@@ -1,4 +1,5 @@
 //$navbar-default-bg : #932a2a;
+$grid-float-breakpoint: 1000px;
 
 
 @import "bootstrap-sprockets";
@@ -20,6 +21,7 @@
 }
 
 .jumbotron {
+  margin-top: 15px;
   min-height: 100%;
   background-image: asset-url('background_home.jpg');
   background-size: cover;
